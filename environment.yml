@@ -1,0 +1,12 @@
+name: robokop-proteome
+channels:
+  - conda-forge
+dependencies:
+  # The extractor uses only the standard library.  Python 3.11 satisfies the
+  # typing and SQLite features used by the script while remaining broadly
+  # available on HPC systems.
+  - python=3.11
+  - sqlite>=3.40
+  - openssl
+  - ca-certificates
+  - pip
